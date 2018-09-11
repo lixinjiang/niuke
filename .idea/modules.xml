@@ -4,8 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Java8-study/Java8-study.iml" filepath="$PROJECT_DIR$/../Java8-study/Java8-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/../book-mybatis/book-mybatis.iml" filepath="$PROJECT_DIR$/../book-mybatis/book-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../web/demo/demo.iml" filepath="$PROJECT_DIR$/../../web/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../demo-mybatis/demo-mybatis.iml" filepath="$PROJECT_DIR$/../demo-mybatis/demo-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hdfs-demo/hdfs-demo.iml" filepath="$PROJECT_DIR$/../hdfs-demo/hdfs-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/niuke-exame.iml" filepath="$PROJECT_DIR$/.idea/niuke-exame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pdf_demo/pdf_demo.iml" filepath="$PROJECT_DIR$/../pdf_demo/pdf_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pdf_demo2/pdf_demo2.iml" filepath="$PROJECT_DIR$/../pdf_demo2/pdf_demo2.iml" />
       <module fileurl="file://$PROJECT_DIR$/../zk-01/zk-01.iml" filepath="$PROJECT_DIR$/../zk-01/zk-01.iml" />
     </modules>
   </component>

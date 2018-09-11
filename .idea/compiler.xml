@@ -7,13 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="demo-mybatis" />
+        <module name="hdfs-demo" />
+        <module name="pdf_demo" />
+        <module name="pdf_demo2" />
         <module name="zk-01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="book-mybatis" target="1.8" />
       <module name="demo-mybatis" target="1.5" />
-      <module name="zk-01" target="1.6" />
+      <module name="hdfs-demo" target="1.6" />
+      <module name="pdf_demo" target="1.5" />
+      <module name="pdf_demo2" target="1.5" />
+      <module name="zk-01" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
