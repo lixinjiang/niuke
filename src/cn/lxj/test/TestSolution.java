@@ -61,12 +61,20 @@ public class TestSolution {
     }
 
     @Test
-    public void testSolution29(){
+    public void testSolution29() {
         Solution29 solution = new Solution29();
-        int [] array = {4,5,1,6,2,7,3,8};
+        int[] array = {4, 5, 1, 6, 2, 7, 3, 8};
         ArrayList<Integer> integers = solution.GetLeastNumbers_Solution(array, 3);
-        for (int i = 0 ; i < integers.size(); i ++) {
+        for (int i = 0; i < integers.size(); i++) {
             System.out.println(integers.get(i));
         }
+    }
+
+    @Test
+    public void testSolution30() {
+        Solution30 solution = new Solution30();
+        int[] array = {6, -3, -2, 7, -15, 1, 2, 2};
+        int rs = solution.FindGreatestSumOfSubArray(array);
+        System.out.println("最大一维连续值是：" + rs);
     }
 }
