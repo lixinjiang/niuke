@@ -12,7 +12,6 @@ import java.util.HashMap;
 public class Solution28 {
     public int MoreThanHalfNum_Solution(int [] array) {
         double halfSize = array.length / 2.0;
-        System.out.println("halfSize：" + halfSize);
         HashMap<Integer, Integer> map = new HashMap<>();
         for (int a : array) {
             if (map.containsKey(a))

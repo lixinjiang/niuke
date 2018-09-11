@@ -59,4 +59,14 @@ public class TestSolution {
         int rs = solution.MoreThanHalfNum_Solution(array);
         System.out.println("超过一半的数是：" + rs);
     }
+
+    @Test
+    public void testSolution29(){
+        Solution29 solution = new Solution29();
+        int [] array = {4,5,1,6,2,7,3,8};
+        ArrayList<Integer> integers = solution.GetLeastNumbers_Solution(array, 3);
+        for (int i = 0 ; i < integers.size(); i ++) {
+            System.out.println(integers.get(i));
+        }
+    }
 }
