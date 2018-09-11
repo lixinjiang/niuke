@@ -50,4 +50,13 @@ public class TestSolution {
             System.out.println(s);
         }
     }
+
+    @Test
+    public void testSolution28() {
+        Solution28 solution = new Solution28();
+        int[] array = {5, 5, 5, 5, 5, 5, 5, 4, 2};
+        System.out.println(array.length);
+        int rs = solution.MoreThanHalfNum_Solution(array);
+        System.out.println("超过一半的数是：" + rs);
+    }
 }
