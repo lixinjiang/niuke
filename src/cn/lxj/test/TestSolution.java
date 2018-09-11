@@ -4,6 +4,7 @@ import cn.lxj.jianzhioffer.*;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Stack;
 
 /**
@@ -25,17 +26,28 @@ public class TestSolution {
     }
 
     @Test
-    public void testSolution21(){
+    public void testSolution21() {
         Solution21 solution21 = new Solution21();
-        int [] pushA = {1,2,3,4,5};
-        int [] popA = {4,5,3,2,1};
-        System.out.println(solution21.IsPopOrder(pushA,popA));
+        int[] pushA = {1, 2, 3, 4, 5};
+        int[] popA = {4, 5, 3, 2, 1};
+        System.out.println(solution21.IsPopOrder(pushA, popA));
     }
 
     @Test
-    public void testSolution24(){
+    public void testSolution24() {
         Solution24 solution = new Solution24();
         TreeNode root = new TreeNode(100);
 //        root.
+    }
+
+    @Test
+    public void testSolution27() {
+        Solution27 solution = new Solution27();
+        String str = "abc";
+        ArrayList<String> permutation = solution.Permutation(str);
+        System.out.println(permutation.size());
+        for (String s : permutation) {
+            System.out.println(s);
+        }
     }
 }
