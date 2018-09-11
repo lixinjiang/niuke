@@ -9,7 +9,7 @@ import java.util.Stack;
 
 /**
  * TestSolution
- * description 测试栈数据结构找到最小的元素的min函数
+ * description
  * create by lxj 2018/9/4
  **/
 public class TestSolution {
@@ -76,5 +76,12 @@ public class TestSolution {
         int[] array = {6, -3, -2, 7, -15, 1, 2, 2};
         int rs = solution.FindGreatestSumOfSubArray(array);
         System.out.println("最大一维连续值是：" + rs);
+    }
+
+    @Test
+    public void testSolution31() {
+        Solution31 solution = new Solution31();
+        int rs = solution.NumberOf1Between1AndN_Solution(1300);
+        System.out.println(rs);
     }
 }
