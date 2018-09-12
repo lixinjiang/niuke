@@ -4,7 +4,6 @@ import cn.lxj.jianzhioffer.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 
 /**
  * TestSolution
@@ -64,8 +63,8 @@ public class TestSolution {
         Solution29 solution = new Solution29();
         int[] array = {4, 5, 1, 6, 2, 7, 3, 8};
         ArrayList<Integer> integers = solution.GetLeastNumbers_Solution(array, 3);
-        for (int i = 0; i < integers.size(); i++) {
-            System.out.println(integers.get(i));
+        for (Integer integer : integers) {
+            System.out.println(integer);
         }
     }
 
@@ -108,5 +107,15 @@ public class TestSolution {
         Solution34 solution = new Solution34();
         int index = solution.FirstNotRepeatingChar("googgle");
         System.out.println(index);
+    }
+
+    @Test
+    public void testSolution35() {
+        Solution35 solution = new Solution35();
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1,
+                2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0};
+        int count = solution.InversePairs(arr);
+        System.out.println(count);
+//        System.out.println("7对1000000007进行取模，计算值为：" + 7 % 1000000007);
     }
 }
