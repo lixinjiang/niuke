@@ -84,4 +84,12 @@ public class TestSolution {
         int rs = solution.NumberOf1Between1AndN_Solution(1300);
         System.out.println(rs);
     }
+
+    @Test
+    public void testSolution32(){
+        Solution32 solution = new Solution32();
+        int[] numbersArray = {12, 41, 345};
+        String s = solution.PrintMinNumber(numbersArray);
+        System.out.println(s);
+    }
 }
