@@ -112,10 +112,40 @@ public class TestSolution {
     @Test
     public void testSolution35() {
         Solution35 solution = new Solution35();
-        int[] arr = {1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0,1,
-                2, 3, 4, 5, 6, 7, 0,1, 2, 3, 4, 5, 6, 7, 0};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 0};
         int count = solution.InversePairs(arr);
         System.out.println(count);
 //        System.out.println("7对1000000007进行取模，计算值为：" + 7 % 1000000007);
+    }
+
+    @Test
+    public void testSolution37() {
+        Solution37 solution = new Solution37();
+        int[] array = {1, 2, 3, 2, 2, 3, 3, 2, 3, 4, 2, 3};
+        System.out.println(solution.GetNumberOfK(array, 2));
+    }
+
+    @Test
+    public void testSolution38() {
+        Solution38 solution = new Solution38();
+        TreeNode tree50 = new TreeNode(50);
+        TreeNode tree25 = new TreeNode(25);
+        TreeNode tree75 = new TreeNode(75);
+        TreeNode tree12 = new TreeNode(12);
+        TreeNode tree28 = new TreeNode(28);
+        TreeNode tree63 = new TreeNode(63);
+        TreeNode tree26 = new TreeNode(26);
+        TreeNode tree30 = new TreeNode(30);
+        TreeNode tree40 = new TreeNode(40);
+        tree30.right = tree40;
+        tree28.right = tree30;
+        tree28.left = tree26;
+        tree25.left = tree12;
+        tree25.right = tree28;
+        tree75.left = tree63;
+        tree50.left = tree25;
+        tree50.right = tree75;
+        int depth = solution.TreeDepth(tree50);
+        System.out.println(depth);
     }
 }
