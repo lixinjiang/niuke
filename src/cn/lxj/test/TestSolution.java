@@ -1,11 +1,9 @@
 package cn.lxj.test;
 
 import cn.lxj.jianzhioffer.*;
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 /**
  * TestSolution
@@ -86,10 +84,21 @@ public class TestSolution {
     }
 
     @Test
-    public void testSolution32(){
+    public void testSolution32() {
         Solution32 solution = new Solution32();
         int[] numbersArray = {12, 41, 345};
         String s = solution.PrintMinNumber(numbersArray);
         System.out.println(s);
+    }
+
+    @Test
+    public void testSolution33() {
+        Solution33 solution = new Solution33();
+        int uglyNumber = solution.GetUglyNumber_Solution(7);
+        System.out.println(uglyNumber);
+        System.out.println(Integer.toBinaryString(uglyNumber));
+        System.out.println(Integer.numberOfLeadingZeros(uglyNumber));
+        int pow = (int)Math.pow(2, 32);
+        System.out.println(pow+":"+Integer.toBinaryString(pow));
     }
 }
