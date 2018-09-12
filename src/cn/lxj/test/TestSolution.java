@@ -4,6 +4,7 @@ import cn.lxj.jianzhioffer.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
  * TestSolution
@@ -98,7 +99,14 @@ public class TestSolution {
         System.out.println(uglyNumber);
         System.out.println(Integer.toBinaryString(uglyNumber));
         System.out.println(Integer.numberOfLeadingZeros(uglyNumber));
-        int pow = (int)Math.pow(2, 32);
-        System.out.println(pow+":"+Integer.toBinaryString(pow));
+        int pow = (int) Math.pow(2, 32);
+        System.out.println(pow + ":" + Integer.toBinaryString(pow));
+    }
+
+    @Test
+    public void testSolution34() {
+        Solution34 solution = new Solution34();
+        int index = solution.FirstNotRepeatingChar("googgle");
+        System.out.println(index);
     }
 }
